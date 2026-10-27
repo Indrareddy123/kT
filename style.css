@@ -1,0 +1,226 @@
+/* .sub_button{
+    background-color: rgb(200, 16, 16);
+    color: white;
+    height: 35px;
+    width:90px;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.sub_button:hover{
+    opacity: 0.5;
+}
+.sub_button:active{
+    background-color: rgb(8, 227, 8);
+}
+.join{
+    background-color: white;
+    color:rgb(10, 176, 237);
+    height: 40px;
+    width: 80px;
+    border-radius: 2px;
+    border-color: rgb(10, 176, 237);
+    border-style: solid;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 1s,color 1s;
+}
+.join:hover{
+    background-color: rgb(10, 176, 237);
+    color: white;
+}
+.join:active{
+    opacity: 0.9;
+}
+.tweet{
+    background-color: rgb(9, 146, 237);
+    color: white;
+    height: 50px;
+    width: 90px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 100px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.tweet:hover{
+     box-shadow: 4px 4px 17px rgb(142, 140, 140);
+} */
+
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #aac9f0;
+    color: #0e0e0e;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    background-color: rgb(229, 221, 221);
+    color: #0f0f0f;
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #1d4ed8;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 8px;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    gap: 20px;
+}
+
+.skill-card {
+    flex: 1;
+    background-color: #eff6ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.skill-card li {
+    margin-bottom: 8px;
+}
+
+/* Education table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+th {
+    background-color: #172554;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e4e6e9;
+}
+
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+/* Footer */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    section {
+        width: 92%;
+        padding: 18px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+}
